@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "can_backend": {
+      "main": "src/can_backend/main.mo",
+      "type": "motoko"
+    },
+    "can_frontend": {
+      "dependencies": [
+        "can_backend"
+      ],
+      "source": [
+        "src/can_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "can_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
